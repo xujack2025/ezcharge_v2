@@ -4,6 +4,8 @@ import 'package:ezcharge/views/auth/otp_screen.dart';
 import 'package:ezcharge/views/auth/AdminSignInScreen.dart'; // Import the Admin Sign-In Screen
 
 class SignInScreen extends StatefulWidget {
+  const SignInScreen({super.key});
+
   @override
   _SignInScreenState createState() => _SignInScreenState();
 }

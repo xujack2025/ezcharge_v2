@@ -222,8 +222,7 @@ class ComplaintDetailScreen extends StatelessWidget {
   final String complaintId;
 
   const ComplaintDetailScreen(
-      {Key? key, required this.complaint, required this.complaintId})
-      : super(key: key);
+      {super.key, required this.complaint, required this.complaintId});
 
   @override
   Widget build(BuildContext context) {

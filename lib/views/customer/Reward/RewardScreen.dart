@@ -221,7 +221,7 @@ class _RewardScreenState extends State<RewardScreen> {
 
             ..._rewards
                 .map((reward) => _buildPromotionItem(context, reward))
-                .toList(),
+                ,
           ],
         ),
       ),

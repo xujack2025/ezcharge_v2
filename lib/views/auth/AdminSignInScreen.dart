@@ -5,6 +5,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'otp_screen.dart';
 
 class AdminSignInScreen extends StatefulWidget {
+  const AdminSignInScreen({super.key});
+
   @override
   _AdminSignInScreenState createState() => _AdminSignInScreenState();
 }

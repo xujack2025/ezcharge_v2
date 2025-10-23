@@ -401,7 +401,7 @@ class _ChargingUsageReportState extends State<ChargingUsageReport> {
                         return DropdownButtonFormField<String>(
                           isExpanded: true,
                           // Ensures it takes full width
-                          value: selectedStationId,
+                          initialValue: selectedStationId,
                           hint: const Text("Select Charging Station"),
                           decoration: InputDecoration(
                             border: OutlineInputBorder(

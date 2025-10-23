@@ -3,7 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class RequestHistoryScreen extends StatefulWidget {
-  const RequestHistoryScreen({Key? key}) : super(key: key);
+  const RequestHistoryScreen({super.key});
 
   @override
   _RequestHistoryScreenState createState() => _RequestHistoryScreenState();

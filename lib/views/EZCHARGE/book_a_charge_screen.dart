@@ -16,6 +16,8 @@ import 'package:ezcharge/views/customer/customercontent/AccountScreen.dart';
 import 'package:ezcharge/views/EZCHARGE/CheckInScreen.dart';
 
 class BookAChargeScreen extends StatefulWidget {
+  const BookAChargeScreen({super.key});
+
   @override
   _BookAChargeScreenState createState() => _BookAChargeScreenState();
 }
@@ -182,7 +184,7 @@ class _BookAChargeScreenState extends State<BookAChargeScreen>
           if (!updatedSnapshot.exists) return;
 
           Map<String, dynamic>? updatedData =
-              updatedSnapshot.data() as Map<String, dynamic>?;
+              updatedSnapshot.data();
 
           if (updatedData != null && updatedData.containsKey('driverID')) {
             String updatedDriverID = updatedData['driverID'] ?? "Unknown";

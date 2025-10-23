@@ -11,8 +11,7 @@ import 'package:ezcharge/viewmodels/tracking_viewmodel.dart';
 class AdminAssignDriverPage extends StatefulWidget {
   final String requestID;
 
-  const AdminAssignDriverPage({required this.requestID, Key? key})
-      : super(key: key);
+  const AdminAssignDriverPage({required this.requestID, super.key});
 
   @override
   _AdminAssignDriverPageState createState() => _AdminAssignDriverPageState();

@@ -377,8 +377,6 @@ class _CheckDetailScreenState extends State<CheckDetailScreen> {
 
   //Handle Check-In Action
   Future<void> _checkIn() async {
-    if (_accountId == null) return;
-
     try {
       //Update reservation status to "Active" (or any status you want).
       await FirebaseFirestore.instance

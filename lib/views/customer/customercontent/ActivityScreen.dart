@@ -8,7 +8,7 @@ import 'package:ezcharge/views/EZCHARGE/TimerScreen.dart';
 class ActivityScreen extends StatefulWidget {
   final int initialTabIndex;
 
-  const ActivityScreen({Key? key, this.initialTabIndex = 0}) : super(key: key);
+  const ActivityScreen({super.key, this.initialTabIndex = 0});
 
   @override
   State<ActivityScreen> createState() => _ActivityScreenState();
@@ -533,7 +533,6 @@ class _ActivityScreenState extends State<ActivityScreen>
             attendance["StationName"] ?? attendance["StationID"] ?? "";
         final chargerName =
             attendance["ChargerName"] ?? attendance["ChargerID"] ?? "";
-        ;
 
         final totalCost = attendance["TotalCost"]?.toString() ?? "0.00";
         final duration = attendance["Duration"] ?? "";

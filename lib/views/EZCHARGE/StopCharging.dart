@@ -9,9 +9,9 @@ class StopChargingScreen extends StatefulWidget {
   final Duration totalDuration;
 
   const StopChargingScreen({
-    Key? key,
+    super.key,
     required this.totalDuration,
-  }) : super(key: key);
+  });
 
 
   @override

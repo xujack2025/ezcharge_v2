@@ -7,6 +7,8 @@ import 'package:http/http.dart' as http;
 import 'package:ezcharge/views/customer/Service/api_key.dart';
 
 class Chatbotscreen extends StatefulWidget {
+  const Chatbotscreen({super.key});
+
   @override
   _ChatbotscreenState createState() => _ChatbotscreenState();
 }

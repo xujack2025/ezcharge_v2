@@ -4,7 +4,6 @@ import 'package:ezcharge/views/admin/admin_drawer.dart';
 import 'package:ezcharge/widgets/bottom_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 // Import Admin Pages
 import 'admin_assign_driver.dart';

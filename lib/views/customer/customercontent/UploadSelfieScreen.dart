@@ -17,7 +17,7 @@ class UploadSelfieScreen extends StatefulWidget {
 class _UploadSelfieScreenState extends State<UploadSelfieScreen> {
   final ImagePicker picker = ImagePicker();
   File? _selfieImage;
-  bool _isUploading = false; // Show loading indicator
+  final bool _isUploading = false; // Show loading indicator
   String _accountId = ""; // Store customer ID
 
   @override
@@ -96,7 +96,7 @@ class _UploadSelfieScreenState extends State<UploadSelfieScreen> {
 
     try {
       // Generate unique filename
-      final fileName = '${_accountId}${path.extension(_selfieImage!.path)}';
+      final fileName = '$_accountId${path.extension(_selfieImage!.path)}';
       final Reference storageRef =
           FirebaseStorage.instance.ref().child('selfie/$fileName');
 

@@ -6,7 +6,7 @@ import 'package:ezcharge/views/EZCHARGE/HomeScreen.dart';
 import 'package:ezcharge/views/EZCHARGE/PaymentHistoryDetail.dart';
 
 class PaymentHistoryListScreen extends StatefulWidget {
-  const PaymentHistoryListScreen({Key? key}) : super(key: key);
+  const PaymentHistoryListScreen({super.key});
 
   @override
   State<PaymentHistoryListScreen> createState() =>

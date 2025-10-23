@@ -6,7 +6,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:ezcharge/views/EZCHARGE/TimerScreen.dart';
 
 class StartChargingScreen extends StatefulWidget {
-  const StartChargingScreen({Key? key}) : super(key: key);
+  const StartChargingScreen({super.key});
 
   @override
   _StartChargingScreenState createState() => _StartChargingScreenState();

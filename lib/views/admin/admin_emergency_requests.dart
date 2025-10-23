@@ -3,7 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'admin_assign_driver.dart';
 
 class AdminEmergencyRequestsPage extends StatefulWidget {
-  const AdminEmergencyRequestsPage({Key? key}) : super(key: key);
+  const AdminEmergencyRequestsPage({super.key});
 
   @override
   _AdminEmergencyRequestsPageState createState() =>

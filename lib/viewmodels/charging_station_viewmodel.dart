@@ -8,7 +8,7 @@ import 'package:ezcharge/models/charging_bay_model.dart';
 class ChargingStationViewModel {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final FirebaseStorage _storage = FirebaseStorage.instance;
-  List<Map<String, dynamic>> _stations = [];
+  final List<Map<String, dynamic>> _stations = [];
 
   List<Map<String, dynamic>> get stations => _stations;
 

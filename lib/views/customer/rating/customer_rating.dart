@@ -2,14 +2,10 @@ import 'dart:developer';
 
 //firebase
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 //file
-import 'package:ezcharge/views/customer/rating/customer_complaint.dart';
-import 'package:ezcharge/views/customer/rating/customer_review.dart';
-import 'package:ezcharge/constants/colors.dart';
 import 'package:ezcharge/constants/text_styles.dart';
 
 class RatingPage extends StatefulWidget {

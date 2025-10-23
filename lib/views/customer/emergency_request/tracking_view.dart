@@ -17,8 +17,7 @@ class TrackingView extends StatefulWidget {
   final String driverID;
   final String requestID;
 
-  const TrackingView({required this.driverID, required this.requestID, Key? key})
-    : super(key: key);
+  const TrackingView({required this.driverID, required this.requestID, super.key});
 
   @override
   _TrackingViewState createState() => _TrackingViewState();

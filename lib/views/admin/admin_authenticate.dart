@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class AdminAuthenticatePage extends StatefulWidget {
+  const AdminAuthenticatePage({super.key});
+
   @override
   _AdminAuthenticatePageState createState() => _AdminAuthenticatePageState();
 }
@@ -174,15 +176,15 @@ class _AdminAuthenticatePageState extends State<AdminAuthenticatePage>
                       ElevatedButton(
                         onPressed: () =>
                             approveCustomer(customer['customerId']),
-                        child: Text("Approve"),
                         style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.green),
+                        child: Text("Approve"),
                       ),
                       ElevatedButton(
                         onPressed: () => rejectCustomer(customer['customerId']),
-                        child: Text("Reject"),
                         style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.red),
+                        child: Text("Reject"),
                       ),
                     ],
                   ),

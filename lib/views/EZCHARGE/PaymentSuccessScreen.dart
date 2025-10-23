@@ -9,10 +9,10 @@ class PaymentSuccessScreen extends StatefulWidget {
   final double totalAmount;
 
   const PaymentSuccessScreen({
-    Key? key,
+    super.key,
     required this.paymentMethod,
     required this.totalAmount,
-  }) : super(key: key);
+  });
 
   @override
   State<PaymentSuccessScreen> createState() => _PaymentSuccessScreenState();

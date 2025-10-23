@@ -11,9 +11,9 @@ class CheckOutDetailScreen extends StatefulWidget {
   final Duration totalDuration; // Passed in from Timer/StopCharging screen
 
   const CheckOutDetailScreen({
-    Key? key,
+    super.key,
     required this.totalDuration,
-  }) : super(key: key);
+  });
 
   @override
   State<CheckOutDetailScreen> createState() => _CheckOutDetailScreenState();

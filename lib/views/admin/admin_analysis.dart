@@ -57,8 +57,7 @@ class _AdminAnalyticsPageState extends State<AdminAnalyticsPage>
 
       for (var doc in snapshot.docs) {
         var docData = doc.data();
-        if (docData == null ||
-            !(docData as Map<String, dynamic>).containsKey('CheckInTime')) {
+        if (!(docData).containsKey('CheckInTime')) {
           continue;
         }
 

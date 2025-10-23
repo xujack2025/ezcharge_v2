@@ -246,7 +246,7 @@ class _ReservationScreenState extends State<ReservationScreen> {
             const Text("Provided Charger",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
             const SizedBox(height: 10),
-            ...chargers.map((charger) => _buildChargerCard(charger)).toList(),
+            ...chargers.map((charger) => _buildChargerCard(charger)),
 
             const SizedBox(height: 20),
 

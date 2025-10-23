@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ezcharge/views/auth/IntroScheduleScreen.dart';
 
 class WelcomeScreen extends StatefulWidget {
-  const WelcomeScreen({Key? key}) : super(key: key);
+  const WelcomeScreen({super.key});
 
   @override
   State<WelcomeScreen> createState() => _WelcomeScreenState();

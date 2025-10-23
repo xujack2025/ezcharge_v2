@@ -397,7 +397,7 @@ class _AdminRewardsScreenState extends State<AdminRewardsScreen> {
                       const SizedBox(height: 10),
 
                       // Users List
-                      Container(
+                      SizedBox(
                         height: MediaQuery.of(context).size.height *
                             0.4, // Dynamic height
                         width: double.maxFinite, // Ensures proper fit

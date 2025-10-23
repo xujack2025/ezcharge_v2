@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 class RewardSelectScreen extends StatefulWidget {
-  const RewardSelectScreen({Key? key}) : super(key: key);
+  const RewardSelectScreen({super.key});
 
   @override
   State<RewardSelectScreen> createState() => _RewardSelectScreenState();

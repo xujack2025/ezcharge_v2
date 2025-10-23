@@ -12,10 +12,10 @@ class PaymentHistoryDetailScreen extends StatefulWidget {
   final String paymentDocId;
 
   const PaymentHistoryDetailScreen({
-    Key? key,
+    super.key,
     required this.accountId,
     required this.paymentDocId,
-  }) : super(key: key);
+  });
 
   @override
   State<PaymentHistoryDetailScreen> createState() =>
@@ -54,7 +54,7 @@ class _PaymentHistoryDetailScreenState
           .get();
 
       if (querySnap.docs.isNotEmpty) {
-        final data = querySnap.docs.first.data() as Map<String, dynamic>;
+        final data = querySnap.docs.first.data();
 
         // Extract fields from the payment history document
         _stationName = data["StationName"] ?? "";

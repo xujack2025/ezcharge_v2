@@ -71,11 +71,11 @@ class _AdminChargingBayPageState extends State<AdminChargingBayPage> {
 
   // Manage Charging Bay: Add/Edit with validation
   void _editChargingBay(ChargingBay? bay) async {
-    TextEditingController _chargerNameController =
+    TextEditingController chargerNameController =
         TextEditingController(text: bay?.chargerName ?? "");
-    TextEditingController _chargerVoltageController =
+    TextEditingController chargerVoltageController =
         TextEditingController(text: bay?.chargerVoltage.toString() ?? "");
-    TextEditingController _pricePerVoltageController =
+    TextEditingController pricePerVoltageController =
         TextEditingController(text: bay?.pricePerVoltage.toString() ?? "");
 
     String chargerType = bay?.chargerType ?? "Type 2";
@@ -115,7 +115,7 @@ class _AdminChargingBayPageState extends State<AdminChargingBayPage> {
 
                     // Charger Name
                     _buildStyledTextField(
-                        "Charger Name", _chargerNameController),
+                        "Charger Name", chargerNameController),
 
                     // Charger Type Dropdown
                     _buildStyledDropdown(
@@ -141,7 +141,7 @@ class _AdminChargingBayPageState extends State<AdminChargingBayPage> {
                     // Charger Voltage (with validation)
                     _buildStyledTextField(
                       "Kilowatt-hours",
-                      _chargerVoltageController,
+                      chargerVoltageController,
                       isNumber: true,
                       validator: (value) {
                         if (value == null || value.isEmpty) {
@@ -157,7 +157,7 @@ class _AdminChargingBayPageState extends State<AdminChargingBayPage> {
                     // Price per Voltage (with validation)
                     _buildStyledTextField(
                       "Price per kilowatt-hours",
-                      _pricePerVoltageController,
+                      pricePerVoltageController,
                       isNumber: true,
                       validator: (value) {
                         if (value == null || value.isEmpty) {
@@ -197,13 +197,13 @@ class _AdminChargingBayPageState extends State<AdminChargingBayPage> {
                   if (_formKey.currentState?.validate() ?? false) {
                     ChargingBay newBay = ChargingBay(
                       chargerID: newChargerID,
-                      chargerName: _chargerNameController.text,
+                      chargerName: chargerNameController.text,
                       chargerType: chargerType,
                       chargerVoltage:
-                          double.parse(_chargerVoltageController.text),
+                          double.parse(chargerVoltageController.text),
                       currentType: currentType,
                       pricePerVoltage:
-                          double.parse(_pricePerVoltageController.text),
+                          double.parse(pricePerVoltageController.text),
                       status: status,
                     );
 
@@ -377,7 +377,7 @@ class _AdminChargingBayPageState extends State<AdminChargingBayPage> {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
       child: DropdownButtonFormField<String>(
-        value: value,
+        initialValue: value,
         onChanged: onChanged,
         decoration: InputDecoration(
           labelText: label,

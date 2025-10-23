@@ -3,8 +3,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 // Files
-import 'package:ezcharge/views/customer/customercontent/EditProfileScreen.dart';
-import 'admin_dashboard.dart';
 import 'admin_authenticate.dart';  // ✅ Import the Authentication Page
 import 'package:ezcharge/services/auth_service.dart';
 import 'package:ezcharge/views/auth/signin.dart';

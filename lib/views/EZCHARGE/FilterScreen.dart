@@ -9,7 +9,7 @@ class FilterScreen extends StatefulWidget {
 
 class _FilterScreenState extends State<FilterScreen> {
   String _selectedPower = ''; // AC / DC
-  List<String> _selectedNearby = []; // Nearby filters
+  final List<String> _selectedNearby = []; // Nearby filters
   double _priceRange = 2; // Default price range
 
   //Toggle Power Supply Filter

@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
-import 'package:ezcharge/constants/colors.dart';
-import 'package:ezcharge/constants/text_styles.dart';
 
 class ManageReviewsPage extends StatefulWidget {
   const ManageReviewsPage({super.key});

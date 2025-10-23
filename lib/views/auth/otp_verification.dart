@@ -7,7 +7,7 @@ class OTPScreen extends StatefulWidget {
   final String phoneNumber;
   final String verificationId;
 
-  OTPScreen({required this.phoneNumber, required this.verificationId});
+  const OTPScreen({super.key, required this.phoneNumber, required this.verificationId});
 
   @override
   _OTPScreenState createState() => _OTPScreenState();

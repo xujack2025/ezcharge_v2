@@ -214,8 +214,9 @@ class _AdminNotificationPageState extends State<AdminNotificationPage> {
 
   // ✅ Save or Update Notification
   Future<void> _saveNotification() async {
-    if (_titleController.text.isEmpty || _messageController.text.isEmpty)
+    if (_titleController.text.isEmpty || _messageController.text.isEmpty) {
       return;
+    }
 
     if (_editingNotificationId == null) {
       await _notificationViewModel.createNotification(

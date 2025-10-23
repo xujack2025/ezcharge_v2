@@ -9,11 +9,11 @@ class RequestPaymentHistoryDetailScreen extends StatefulWidget {
   final String requestId;
 
   const RequestPaymentHistoryDetailScreen({
-    Key? key,
+    super.key,
     required this.accountId,
     required this.paymentDocId,
     required this.requestId,
-  }) : super(key: key);
+  });
 
   @override
   State<RequestPaymentHistoryDetailScreen> createState() =>
@@ -49,7 +49,7 @@ class _RequestPaymentHistoryDetailScreenState
           .get();
 
       if (querySnap.docs.isNotEmpty) {
-        final data = querySnap.docs.first.data() as Map<String, dynamic>;
+        final data = querySnap.docs.first.data();
 
         // Extract fields from the payment history document
         _duration = data["Duration"] ?? "";

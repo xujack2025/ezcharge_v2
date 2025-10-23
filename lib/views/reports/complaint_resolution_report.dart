@@ -148,7 +148,7 @@ class _ComplaintResolutionReportState extends State<ComplaintResolutionReport> {
           /*.add(const Duration(hours: 8))*/
           : null;
       Duration? resolutionTime =
-          resolvedAt != null ? resolvedAt.difference(submittedAt) : null;
+          resolvedAt?.difference(submittedAt);
 
       // ✅ Fetch userName from the corresponding `customers` document
       String userName = await _fetchCustomerName(customerID);

@@ -28,7 +28,7 @@ class _AdminChargingStationsPageState extends State<AdminChargingStationsPage> {
   File? _selectedImage;
   String? _imageUrl;
   String? _editingStationID;
-  List<Map<String, dynamic>> _stations = [];
+  final List<Map<String, dynamic>> _stations = [];
 
   @override
   void initState() {

@@ -40,7 +40,7 @@ class TimerService {
 }
 
 class TimerScreen extends StatefulWidget {
-  const TimerScreen({Key? key}) : super(key: key);
+  const TimerScreen({super.key});
 
   @override
   State<TimerScreen> createState() => _TimerScreenState();

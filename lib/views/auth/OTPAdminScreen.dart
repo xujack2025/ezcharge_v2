@@ -7,7 +7,7 @@ class OTPAdminScreen extends StatefulWidget {
   final String phoneNumber;
   final String verificationID;
 
-  OTPAdminScreen({required this.phoneNumber, required this.verificationID});
+  const OTPAdminScreen({super.key, required this.phoneNumber, required this.verificationID});
 
   @override
   _OTPAdminScreenState createState() => _OTPAdminScreenState();

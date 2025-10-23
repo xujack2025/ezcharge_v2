@@ -11,11 +11,11 @@ class RequestPaymentScreen extends StatefulWidget {
   final String duration;
 
   const RequestPaymentScreen({
-    Key? key,
+    super.key,
     required this.requestID,
     required this.chargingCost,
     required this.duration,
-  }) : super(key: key);
+  });
 
   @override
   State<RequestPaymentScreen> createState() => _RequestPaymentScreenState();
@@ -24,7 +24,7 @@ class RequestPaymentScreen extends StatefulWidget {
 class _RequestPaymentScreenState extends State<RequestPaymentScreen> {
   bool isLoading = false;
   String _accountId = "";
-  String _stationImageUrl = "";
+  final String _stationImageUrl = "";
   double _rewardDiscount = 0.0;
   String _selectedRewardID = "";
   int _rewardPoints = 0;

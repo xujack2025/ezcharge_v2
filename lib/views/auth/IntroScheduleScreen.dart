@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'signin_screen.dart';
 
 class IntroScheduleScreen extends StatefulWidget {
-  const IntroScheduleScreen({Key? key}) : super(key: key);
+  const IntroScheduleScreen({super.key});
 
   @override
   State<IntroScheduleScreen> createState() => _IntroScheduleScreenState();
@@ -126,11 +126,11 @@ class OnboardingPage extends StatelessWidget {
   final String imagePath;
 
   const OnboardingPage({
-    Key? key,
+    super.key,
     required this.title,
     required this.subtitle,
     required this.imagePath,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

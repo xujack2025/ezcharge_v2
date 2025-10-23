@@ -11,11 +11,11 @@ class SelectPaymentScreen extends StatefulWidget {
   final int rewardPoints;
 
   const SelectPaymentScreen({
-    Key? key,
+    super.key,
     required this.totalAmount,
     required this.rewardID,
     required this.rewardPoints,
-  }) : super(key: key);
+  });
 
   @override
   State<SelectPaymentScreen> createState() => _SelectPaymentScreenState();

@@ -414,7 +414,7 @@ class _HomeScreenState extends State<HomeScreen> {
         String bookmarkId = ""; // Store Firestore document ID
 
         //Check if the station is already bookmarked
-        Future<void> _checkBookmark() async {
+        Future<void> checkBookmark() async {
           if (_accountId.isEmpty) return;
           try {
             QuerySnapshot bookmarkSnapshot = await FirebaseFirestore.instance
@@ -437,7 +437,7 @@ class _HomeScreenState extends State<HomeScreen> {
         }
 
         /// Toggle Bookmark
-        Future<void> _toggleBookmark(Function setState) async {
+        Future<void> toggleBookmark(Function setState) async {
           if (_accountId.isEmpty) return;
 
           try {
@@ -489,7 +489,7 @@ class _HomeScreenState extends State<HomeScreen> {
         }
 
         //Check bookmark status when card is built
-        _checkBookmark();
+        checkBookmark();
 
         return Card(
           margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
@@ -598,7 +598,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             : Colors.grey, //Fix color toggle
                       ),
                       onPressed: () =>
-                          _toggleBookmark(setState), //Pass setState
+                          toggleBookmark(setState), //Pass setState
                     ),
                   ],
                 ),

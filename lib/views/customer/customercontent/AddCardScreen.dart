@@ -51,13 +51,6 @@ class _AddCardScreenState extends State<AddCardScreen> {
 
   //Function to Add Payment Method to Firestore
   Future<void> _addCardToFirestore() async {
-    if (_accountId == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Error retrieving customer ID.")),
-      );
-      return;
-    }
-
     if (_cardNumberController.text.isEmpty ||
         _expiryDateController.text.isEmpty ||
         _cvvController.text.isEmpty) {
