@@ -1,0 +1,73 @@
+lib/
+├── views/
+│   ├── admin/
+│   │   ├── admin_dashboard.dart
+│   │   ├── admin_profile.dart
+│   │   ├── admin_notification.dart
+│   │   ├── admin_charging_station.dart
+│   │   ├── admin_rewards.dart
+│   │   ├── admin_mechanics.dart
+│   │   ├── admin_analysis.dart
+│   │   ├── admin_complaint.dart
+│   │   ├── admin_home_content.dart
+│   │   ├── admin_drawer.dart
+│   ├── auth/
+│   │   ├── login.dart
+│   │   ├── signup.dart
+│   │   ├── otp_verification.dart
+│   ├── customer/
+│   │   ├──rating/
+│   │   │   ├── customer_complaint.dart
+│   │   │   ├── customer_rating.dart
+│   │   │   ├── customer_review.dart
+│   │   │   ├── manage_complaint.dart
+│   │   │   ├── manage_reviews.dart
+│   │   ├── home.dart
+│   │   ├── customer_profile.dart
+│
+├── models/
+│   ├── admin_model.dart
+│   ├── customer_model.dart
+│   ├── notification_model.dart
+│   ├── charging_station_model.dart
+│   ├── reward_model.dart
+│   ├── mechanic_model.dart
+│   ├── analysis_model.dart
+│   ├── complaint_model.dart
+│
+├── viewmodels/
+│   ├── auth_viewmodel.dart
+│   ├── admin_viewmodel.dart
+│   ├── notification_viewmodel.dart
+│   ├── charging_station_viewmodel.dart
+│   ├── reward_viewmodel.dart
+│   ├── mechanic_viewmodel.dart
+│   ├── complaint_viewmodel.dart
+│   ├── analysis_viewmodel.dart
+│
+├── services/
+│   ├── auth_service.dart
+│   ├── auth_email_service.dart
+│   ├── auth_google_service.dart
+│   ├── auth_phone_service.dart
+│   ├── auth_user_service.dart
+│   ├── notification_service.dart
+│   ├── charging_station_service.dart
+│   ├── reward_service.dart
+│   ├── mechanic_service.dart
+│   ├── analysis_service.dart
+│
+├── widgets/
+│   ├── top_app_bar.dart
+│   ├── bottom_app_bar.dart
+│   ├── button.dart
+│   ├── textfield.dart
+│   ├── notification_card.dart
+│   ├── analysis_chart.dart
+│   ├── navbar.dart
+│
+├── constants/
+│   ├── colors.dart
+│   ├── text_styles.dart
+│
+├── main.dart
