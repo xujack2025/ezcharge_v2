@@ -43,3 +43,10 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Ignore local API key files used in development
+# The file contains secrets and should not be committed
+lib/views/customer/Service/api_key.dart
+
+# Also ignore the general secrets file in lib
+lib/secrets.dart
